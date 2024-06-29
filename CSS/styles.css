@@ -29,10 +29,10 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 1.75rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --biggest-font-size: 3.5rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 2rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
@@ -240,7 +240,7 @@ img {
 
 .home__greeting,
 .home__education{
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
@@ -265,7 +265,7 @@ img {
 
 .home__handle{
   justify-self: center;
-  width: 291px;
+  width: 220px;
   height: 293px ;
   background: linear-gradient(180deg,
               hsla(var(--first-hue),var(--sat), var(--lig), 1),
@@ -875,12 +875,12 @@ img {
   }
 
   .home__handle{
-    width: 290px;
+    width: 300px;
     height: 400px;
   }
 
   .home__img{
-    width: 220px;
+    width: 3000px;
   }
 
   .home__social-link{
@@ -903,7 +903,7 @@ img {
   }
 
   .about__img{
-    width: 350px;
+    width: 500px;
   }
 
   .about__data{
