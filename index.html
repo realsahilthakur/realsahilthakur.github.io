@@ -1,666 +1,525 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon">
 
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="/CSS/swiper-bundle.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/CSS/swiper-bundle.min.css">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="CSS/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="CSS/styles.css">
 
-        <title> Sahil Thakur </title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Journey to Being Best :)</a>
+    <title> Sahil Thakur </title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="Time">Sahil Thakur</div>
+            <div class="nav__clock" id="clock">Time>00:00:00</div> <!-- Added clock div -->
+            <a href="#" class="nav__logo">Journey to Being Best :)</a>
 
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bx-home' ></i>
-                            </a>
-                        </li>
- 
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#about " class="nav__link">
-                                <i class='bx bx-user-circle'></i>
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book-heart'></i>
+                        </a>
+                    </li>
 
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class='bx bx-briefcase-alt'></i>
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bx-book-heart'></i>
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Theme change button -->
+        </nav>
+    </header>
 
-
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class='bx bx-briefcase-alt' ></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class='bx bx-message-square-dots'></i>
-                            </a>
-                        </li>
-                    </ul>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Sahil Thakur</h1>
+                    <br>
+                    <h3 class="home__education">"A Space Geek 🔭"</h3>
+                    <h3 class="home__education">🌐 Aspiring DevOps Professional | Cloud Computing Enthusiast ☁️</h3>
                 </div>
-                        <!-- Theme change button -->
-                        
-            </nav>
-        </header>
+                <div class="home__handle">
+                    <img src="Images/smash.png" alt="" class="home__img">
+                </div>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <span class="home__greeting">Hello, I'm</span>
-                        <h1 class="home__class">Sahil Thakur</h1>
-                        <br>
-                        <h3 class="home__education">"A Space Geek 🔭" </h3>
-                        <h3 class="home__education">  🌐 Aspiring DevOps Professional | Cloud Computing Enthusiast ☁️
-                        </h3>
-                      
-                    </div>
-                    <div class="home__handle">
-                        <img src="Images/smash.png" alt="" class="home__img">
-                    </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/realsahilthakur/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
 
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/realsahilthakur/" target="_blank" class="home__social-link">
-                            <i class='bx bxl-linkedin'></i>
-                        </a>
-
-                        <a href="https://github.com/realsahilthakur" target="_blank" class="home__social-link">
-                            <i class='bx bxl-github' ></i>
-                        </a>
-
-                    </div>
-
-                    <a href="#about" class="home__scroll">
-                        <i class='bx bx-mouse home__scroll-icon' ></i>
-                        <span class="home__scroll-name">Scroll Down</span>
+                    <a href="https://github.com/realsahilthakur" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
                     </a>
                 </div>
-            
-            </section>
-            
-            <!--=============== ABOUT ===============-->
-            <!-- <section class="about section" id="about">
-                <span class="section__subtitle">My Intro</span>
-                <h2 class="section__title">About Me</h2>
 
-                <div class="about__container container grid">
-                <img src="Images/one.jpg" alt="" class="about__img">
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
 
-                <div class="about__data">
-                    <div class="about__info">
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
 
-                        <div class="about__box">
+            <div class="skills__container container">
+                <div class="skills__content cloud-skills">            
+                    <h3 class="skills__title">Cloud & DevOps Skills</h3>
 
-                                <i class='bx bx-award about__icon'></i>
-                                <h3 class="about__title">Ongoing Projects</h3>
-                                <span class="about__subtitle">None</span>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">AWS (EC2, S3, RDS, IAM, VPC)</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">Docker & Kubernetes</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">CI/CD (Jenkins, GitHub Actions, GitLab CI/CD)</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
                         </div>
-                        
-                        <div class="about__box">
-                            <i class='bx bx-briefcase-alt about__icon' ></i>
-                            <h3 class="about__title">Completed Projects</h3>
-                            <span class="about__subtitle">5 Projects</span>
-                        </div>
 
-                        
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">SQL & Database Management</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">Git & Version Control</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">Linux</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <p class="about__description">
-                        Logical and organised individual with a strong foundation in software 
-                        engineering.Proficient in C++, C, Python, Java and SQL .
-                        Seeking to raise coding KPIs by providing error-free codes. 
-                        Ability to translate business requirements into innovative software solutions. 
-                        Excellent teamwork, interpersonal and communication skills.
-                        Strong in design and integration with intuitive problem-solving skills. 
-                        Passionate about implementing and launching new projects.
-                    </p>
+                <div class="skills__content programming-skills">     
+                    <h3 class="skills__title">Programming & Development Skills</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">C++</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">MySQL</h3>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+                                <h3 class="skills__name">Front-End Development (HTML, CSS, JavaScript, React.js)</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </section> -->
-
-            <!--=============== SKILLS ===============-->
-            <section class="skills section" id="skills">
-                <span class="section__subtitle">My Abilities</span>
-                <h2 class="section__title">My Experience</h2>
-
-
-                <div class="skills__container container grid">
-                    <div class="skills__content">
-                        <h3 class="skills__title">Frontend Developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">BASIC</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">BASIC</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">JS</h3>
-                                        <span class="skills__level">BASIC</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">LINUX</h3>
-                                        <span class="skills__level">INTERMEDIATE</span>
-                                    </div>
-                                </div>
-                           </div>
-                        </div>
-                    </div>
-
-
-                    
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">Backend Developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">C++</h3>
-                                        <span class="skills__level">INTERMEDIATE</span>
-                                    </div>
-                                </div>
-
-
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">MYSQL</h3>
-                                        <span class="skills__level">BASIC</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">JAVA</h3>
-                                        <span class="skills__level">INTERMEDIATE</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">PYTHON</h3>
-                                        <span class="skills__level">BASIC</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="skills__container container grid">
-                    <div class="skills__content">
-                        <h3 class="skills__title">Technical skills</h3>
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">AWS </h3>
-                                        <span class="skills__level">BASIC</span>
-                                    </div>
-                                </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bx-badge-check' ></i>
-
-                                    
-                                    <div>
-                                        <h3 class="skills__name">SQL & Database Management</h3>
-                                        <span class="skills__level">BASIC</span>
-                                    </div>
-                                </div>
-
-
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class='bx bx-badge-check' ></i>
-                                <div>
-                                    <h3 class="skills__name"> Web Development</h3>
-                                    <span class="skills__level">BASIC</span>
-                                </div>
-                            </div>
-                            </div>
-                               
-
-
-
-
-                                
-                            </div>
-                        </div>
-
-
-                        </div>
-                    
-            </section>
-
-            <!--=============== PROJECTS ===============-->
-            <section class="services section" id="services">
-                <span class="section__subtitle">COMPLETED </span>
-                <h2 class="section__title">PROJECTS</h2>
-
-                <div class="services__container container grid">
-                    <div class="services__card">
-                        <h3 class="services__title">AI <br> Assistant</h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
-                        </span>
-
-                        <div class="services__modal">
-                                <div class="services__modal-content">
-                                    <i class='bx bx-x services__modal-close'></i>
-
-                                    <h3 class="services__modal-title">AI Virtual Converstional Application</h3>
-                                    <p class="services__modal-description">
-                                        Built a Virtual AI based Application using Java Language With Android Studio. 
-                                    </p>
-
-                                    <ul class="services__modal-list">
-                                        <li class="services__modal-item">
-                                            <i class='bx bx-check services__modal-icon'></i>
-                                            <p class="services__modal-tnfo">
-                                                One of the biggest feature of this 
-                                                application is for the individuals who are visually Impaired .           
-                                            </p>
-                                        </li>
-
-                                        <li class="services__modal-item">
-                                            <i class='bx bx-check services__modal-icon'></i>
-                                            <p class="services__modal-tnfo">
-                                                By simply giving commands they can operate their device like:  <br>
-                                                --- making a phone call <br>
-                                                --- sending a message<br>
-                                                --- surfing Internet <br>
-                                                --- playing music and checking Weather
-                                            </p>
-                                        </li>
-                                    
-                                    </ul>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Attendence <br> Management</h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
-                        </span> 
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">Attendence Management System using Arduino</h3>
-                                <p class="services__modal-description">
-                                    Built Attendence Management system using Fingerprint
-                                     Sensor And Arduino with Arduino IDE.
-                                </p>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            This Project was created using the knowledge of Arduino
-                                             , Fingerprint and Arduino IDE .  </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            User can store their fingerprint and With the help of arduino and everytime
-                                            they rescan fingerprint, time and date will be saved .
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            It can save 200+ Fingerprint.
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            It automatically removes stored time and date after 15 day
-                                            from the system.
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            Whole data will be saved in the Arduino Memory Itself.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Doctone <br> Application</h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">Doctone Application </h3>
-                                <p class="services__modal-description">
-                                    Doctone Application A type of Hospital Management System.
-                                </p>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            This application is specifically designed for the 
-                                            User who want to operate their Medical Record 
-                                            For Hospital like Taking Appointments of
-                                            Doctors and Checking Reports .          
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            Maintain the medical records of the patient.
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            Patients should be able to book a visit.
-                                        </p>
-                                    </li>
-
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Online book <br> Store</h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">Online book Store </h3>
-                                <p class="services__modal-description">
-                                   Platform where user can buy and sell the Book with just one click.
-                                </p>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            About
-                                            A user-friendly Online Bookstore project in which
-                                            users can log in or register, 
-                                            view the available books, select books along with
-                                            their quantity, and buy them. 
-                                                      
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            The project can also be used by the administrator,
-                                            who can add new books, remove books.
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            To sell books client has to contact administrator using message Service .
-                                        </p>
-                                    </li>
-
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Waste Classifier </h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
-                        </span> 
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">Waste Classifier</h3>
-                                <p class="services__modal-description">
-                                    System designed to automate and optimize
-                                    the process of waste sorting. 
-                                </p>
-
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            It uses various technologies such as artificial intelligence,
-                                             machine learning, and computer vision.
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                    It can identify and categorize different types of waste, including recyclable materials,
-                                     organic waste, hazardous waste, and non-recyclable waste.   
+        </section>
+
+        <!--=============== PROJECTS ===============-->
+        <section class="services section" id="services">
+            <span class="section__subtitle">COMPLETED</span>
+            <h2 class="section__title">PROJECTS</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">AI <br> Assistant</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">AI Virtual Conversational Application</h3>
+                            <p class="services__modal-description">
+                                Built a Virtual AI-based Application using Java Language with Android Studio.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        One of the biggest features of this application is for individuals who are visually impaired.
                                     </p>
                                 </li>
 
-
-                                </ul>
-                            </div>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        By simply giving commands, they can operate their device like: <br>
+                                        --- making a phone call <br>
+                                        --- sending a message <br>
+                                        --- surfing the Internet <br>
+                                        --- playing music and checking weather
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Plagarism Detector </h3>
-
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
-                        </span> 
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">Plagarism Detector</h3>
-                                <p class="services__modal-description">
-                                    The Streamlit app is designed to detect plagiarism and find similarities between texts 
-                                </p>
-
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-tnfo">
-                                            It allows users to enter text or upload files (docx, pdf, txt). 
-                                        </p>
-                                    </li>
-
-
-                                            <li class="services__modal-item">
-                                                <i class='bx bx-check services__modal-icon'></i>
-                                                <p class="services__modal-tnfo">
-                                            It splits the text into sentences, searches Google for each sentence, 
-                                            and compares the input text with retrieved results using cosine similarity.
-                                        </p>
-                                    </li>
-
-                                            <li class="services__modal-item">
-                                                <i class='bx bx-check services__modal-icon'></i>
-                                                <p class="services__modal-tnfo">
-                                            Users can also compare the similarity between two uploaded files. 
-                                            The results are displayed in a formatted DataFrame.
-                                        </p>
-                                    </li>
-
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                    </div>
-                    
                 </div>
-            </section>
 
-            <!--=============== WORK ===============-->
-           
-           
+                <div class="services__card">
+                    <h3 class="services__title">Attendance <br> Management</h3>
 
-            <!--=============== CONTACT ===============-->
-            <section class="contact section" id="contact">
-                <!-- <span class="section__subtitle">Get in Touch</span>
-                <h2 class="section__title">Contact Me</h2> -->
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
 
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
 
-                <div class="contact__container container grid">
-                    <div class="contact__content">
-                        <h3 class="contact__title">Want to connect !!!</h3>
+                            <h3 class="services__modal-title">Attendance Management System using Arduino</h3>
+                            <p class="services__modal-description">
+                                Built an Attendance Management System using a Fingerprint Sensor and Arduino with Arduino IDE.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        This project was created using knowledge of Arduino, Fingerprint, and Arduino IDE.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Users can store their fingerprint, and every time they rescan it, the time and date will be saved.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        It can save 200+ fingerprints.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        It automatically removes stored time and date after 15 days from the system.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Whole data will be saved in the Arduino memory itself.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Doctone <br> Application</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Doctone Application</h3>
+                            <p class="services__modal-description">
+                                Doctone Application, a type of Hospital Management System.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        This application is specifically designed for users who want to manage their medical records for hospitals, like taking doctor appointments and checking reports.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Maintain the medical records of the patient.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Patients should be able to book a visit.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Online Book <br> Store</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Online Book Store</h3>
+                            <p class="services__modal-description">
+                                A platform where users can buy and sell books with just one click.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        A user-friendly Online Bookstore project in which users can log in or register, view available books, select books along with their quantity, and buy them.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        The project can also be used by the administrator, who can add new books and remove books.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        To sell books, clients have to contact the administrator using the message service.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Waste Classifier</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Waste Classifier</h3>
+                            <p class="services__modal-description">
+                                A system designed to automate and optimize the process of waste sorting.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        It uses various technologies such as artificial intelligence, machine learning, and computer vision.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        It can identify and categorize different types of waste, including recyclable materials, organic waste, hazardous waste, and non-recyclable waste.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Plagiarism Detector</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Plagiarism Detector</h3>
+                            <p class="services__modal-description">
+                                The Streamlit app is designed to detect plagiarism and find similarities between texts.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        It allows users to enter text or upload files (docx, pdf, txt).
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        It splits the text into sentences, searches Google for each sentence, and compares the input text with retrieved results using cosine similarity.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Users can also compare the similarity between two uploaded files. The results are displayed in a formatted DataFrame.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Want to connect !!!</h3>
 
                     <div class="contact__info">
                         <div class="contact__card">
                             <i class='bx bxl-linkedin'></i>
-                            <h3 class="contact__card-title">Linkedin</h3>
-                            <span class="contat__card-data">realsahilthakur</a></span>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">realsahilthakur</span>
 
                             <a href="https://www.linkedin.com/in/realsahilthakur/" target="_blank" class="contact__button">
-                                OPEN UP <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                OPEN UP <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
 
                         <div class="contact__card">
                             <i class='bx bxl-github'></i>
-                            <h3 class="contact__card-title">Check My work at github</h3>
-                            <span class="contat__card-data">realsahilthakur</a></span>
+                            <h3 class="contact__card-title">Check my work at GitHub</h3>
+                            <span class="contact__card-data">realsahilthakur</span>
 
                             <a href="https://github.com/realsahilthakur" target="_blank" class="contact__button">
-                                OPEN UP <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                OPEN UP <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
-                    </div> 
-                 </div>               
+                    </div>
                 </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">OKA BYE BYE...</h1>
-
-                <ul class="footer__social">
-                    <a href="https://github.com/realsahilthakur" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-github'></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/realsahilthakur/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-linkedin' ></i> 
-                    </a>
-                </ul>
-                <span class="footer__copy">
-                    BE HAPPY
-                </span>
-
             </div>
-        </footer>
+        </section>
+    </main>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="/JS/scrollreveal.min.js"></script>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">OKA BYE BYE...</h1>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="/JS/swiper-bundle.min.js"></script>
+            <ul class="footer__social">
+                <a href="https://github.com/realsahilthakur" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
 
-        <!--=============== MIXITUP FILTER ===============-->
-        <script src="JS/mixitup.min.js"></script>
+                <a href="https://www.linkedin.com/in/realsahilthakur/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </ul>
+            <span class="footer__copy">
+                BE HAPPY
+            </span>
+        </div>
+    </footer>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="JS/main.js"></script>
-    </body>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="/JS/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="/JS/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="JS/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="JS/main.js"></script>
+
+    <!--=============== CLOCK JS ===============-->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const clock = document.getElementById('clock');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update clock every second
+        setInterval(updateClock, 1000);
+        // Initial call to display clock immediately
+        updateClock();
+    </script>
+</body>
 </html>

@@ -5,47 +5,57 @@
 :root {
   --header-height: 3.5rem; 
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
-  --first-hue:1200;
-  --sat: 90%;
-  --lig: 62%;
-  --second-hue:7000;
-  
-  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
-  --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+/*
+    Purple: hsl(250, 66%, 75%)
+    Blue: hsl(207, 90%, 72%)
+    Pink: hsl(356, 66%, 75%)
+    Teal: hsl(174, 63%, 62%)
+*/
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 3.5rem;
-  --h1-font-size: 3rem;
-  --h2-font-size: 2.25rem;
-  --h3-font-size: 2rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  --tiny-font-size: .625rem;
+/* Existing variables (adjusted for clarity, assuming hue typos were intended to be within 0–360) */
+--first-hue: 240; /* Adjusted from 1200 to a valid HSL hue (e.g., purple/blue range) */
+--sat: 90%;
+--lig: 62%;
+--second-hue: 220; /* Adjusted from 7000 to a valid HSL hue (e.g., blue range) */
 
-  /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semibold: 600;
+/* New color variables from the image (hex codes) */
+--color-dark-blue: #3D52A0;
+--color-medium-blue: #7091E6;
+--color-light-blue-gray: #8697C4;
+--color-very-light-blue-gray: #6391f3;
+--color-pale-lavender: #EDE8F5;
 
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
+/* Updated colors using the new schema */
+--first-color: var(--color-medium-blue); /* Main accent color (medium blue) */
+--first-color-alt: var(--color-light-blue-gray); /* Lighter variant for hover states */
+--title-color: var(--color-very-light-blue-gray); /* Light text for titles */
+--text-color: var(--color-light-blue-gray); /* Regular text color */
+--text-color-light: var(--color-very-light-blue-gray); /* Lighter text for subtitles */
+--body-color: var(--color-dark-blue); /* Dark background for body */
+--container-color: var(--color-pale-lavender); /* Light background for containers */
+
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+--body-font: 'Poppins', sans-serif;
+--biggest-font-size: 3.5rem;
+--h1-font-size: 3rem;
+--h2-font-size: 2.25rem;
+--h3-font-size: 2rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+--smaller-font-size: .75rem;
+--tiny-font-size: .625rem;
+
+/*========== Font weight ==========*/
+--font-medium: 500;
+--font-semibold: 600;
+
+/*========== z index ==========*/
+--z-tooltip: 10;
+--z-fixed: 100;
+--z-modal: 1000;
 }
 
 /* Responsive typography */
@@ -112,10 +122,7 @@ img {
 
 /*=============== THEME ===============*/
 
-
-
 /*========== Variables Light theme ==========*/
-
 
 /*========== 
     Color changes in some parts of 
@@ -150,7 +157,6 @@ img {
 .section__title {
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-bottom: 2rem;
 }
 
 .section__subtitle {
@@ -190,7 +196,7 @@ img {
 .nav__menu{
   position: fixed;
   bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%,16%, .8 );
+  background-color: hsla(220, 32%, 16%, .8); /* Adjusted to match --second-hue */
   width: 90%;
   border-radius: 4rem;
   padding:  1rem 2.25rem;
@@ -201,7 +207,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .nav__link{
@@ -212,20 +217,33 @@ img {
   border-radius: 5rem;
 }
 
-
 /* Active link */
 .active-link{
   background: linear-gradient(180deg, 
-              hsla(var(--first-hue), var(--sat), var(--lig), 1) , 
-              hsla(var(--first-hue), var(--sat), var(--lig), .2)
+              hsla(240, 90%, 62%, 1), 
+              hsla(240, 90%, 62%, .2)
               );
-              box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+  box-shadow: 0 0 16px hsla(240, 90%, 62%, .4);
 }
 
 /* Change background header */
 .scroll-header{
-  box-shadow: 0 4px 4px hsla(0, 0% , 4%, .3);
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
+
+/*=============== CLOCK ===============*/
+.nav__clock {
+  color: var(--first-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-right: 1rem; /* Space between clock and logo */
+  transition: .4s; /* Matches your theme transition */
+}
+
+.nav__clock:hover {
+  color: var(--first-color-alt); /* Optional: Hover effect to match nav links */
+}
+
 
 /*=============== HOME ===============*/
 .home__container{
@@ -268,14 +286,14 @@ img {
   width: 220px;
   height: 293px ;
   background: linear-gradient(180deg,
-              hsla(var(--first-hue),var(--sat), var(--lig), 1),
-              hsla(var(--first-hue),var(--sat), var(--lig), .2)
+              hsla(240, 90%, 62%, 1),
+              hsla(240, 90%, 62%, .2)
               );
-              border-radius: 10rem 1rem 10rem 1rem;
-              display: flex;
-              align-items:flex-end	;
-              justify-content: center;
-              overflow: hidden;
+  border-radius: 10rem 1rem 10rem 1rem;
+  display: flex;
+  align-items:flex-end	;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .home__buttons{
@@ -284,7 +302,6 @@ img {
   align-items: center;
   gap : 1.5rem;
 }
-
 
 .home__social,
 .home__scroll{
@@ -340,7 +357,6 @@ img {
   transform: rotate(-90deg);
 }
 
-
 /*=============== BUTTONS ===============*/
 .button{
   display: inline-block;
@@ -354,26 +370,24 @@ img {
 
 .button:hover{
   background-color: var(--first-color-alt);
-  color: var()--body-color;
+  color: var(--body-color);
 }
 
 .button--ghost{
   background-color: transparent;
   border: 2px solid var(--first-color);
   color: var(--first-color);
-
 }
 
 /*=============== ABOUT ===============*/
-
 .about__container{
   row-gap: 2.5rem;
 }
 
 .about__img{
-    width: 220px;
-    border-radius:1.5rem ;
-    justify-self: center;
+  width: 220px;
+  border-radius:1.5rem ;
+  justify-self: center;
 }
 
 .about__data{
@@ -385,15 +399,12 @@ img {
   grid-template-columns: repeat(2 , 1fr);
   gap: .5rem;
   margin-bottom: 2rem;
-  
-  
 }
 
 .about__box{
   background-color: var(--container-color);
   border-radius: .90rem;
   padding: .90rem .10rem;
-  
 }
 
 .about__icon{
@@ -414,62 +425,78 @@ img {
   margin-bottom: 2rem;
 }
 
-
 /*=============== SKILLS ===============*/
-
-.skills__container{
-  row-gap: 2rem;
-  padding-top: 1rem;
+/* Skills Section */
+.skills__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 1rem;
 }
 
-.skills__content{
-  background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 1.25rem;
+.skills__content {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.skills__title{
-  font-size: var(--normal-font-size);
-  font-weight: 1.5rem;
-  color: var(--first-color);
-  text-align: center;
-  margin-bottom: 2.5rem;
+.skills__title {
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 1 rem;
 }
 
-.skills__box{
-  display: flex;
-  justify-content: center;
-  column-gap: 2.5rem;
+.skills__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
 }
 
-.skills__group{
-  display: grid;
-  align-content: flex-start;
-  row-gap: 1rem;
+.skills__group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
-.skills__data{
-  display: flex;
-  column-gap: .5rem;
+/* Aligns skills in a single row with name on left & level on right */
+.skills__data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.skills__bx-badge-check{
-  font-size: 1rem;
-  color: var(--first-color);
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    flex: 1; /* Pushes the skill name to the left */
 }
 
-.skills__name{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  line-height: 18px;
+.skills__level {
+    font-size: var(--tiny-font-size);
+    color: var(--text-color-light);
+    text-align: right;
+    min-width: 100px; /* Ensures consistent alignment */
 }
 
-.skills__level{
-  font-size: var(--tiny-font-size);
+/* Icon Styling */
+.skills__data i {
+    font-size: 1.2rem;
+    color: var(--first-color);
+    margin-right: 0.5rem;
 }
+
 
 /*=============== SERVICES ===============*/
-
 .services__container{
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -508,7 +535,7 @@ img {
 .services__modal{
   position: fixed;
   inset: 0;
-  background-color: hsla(var(--second-hue),28%,16%, .7 );
+  background-color: hsla(220, 28%, 16%, .7);
   padding: .2rem 1rem;
   display: grid ;
   place-items: center;
@@ -565,7 +592,7 @@ img {
   top: 1.5rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  color: var()--first-color;
+  color: var(--first-color);
   cursor: pointer;
 }
 /*Active modal*/
@@ -576,11 +603,7 @@ img {
 
 /*=============== WORK ===============*/
 
-
-
-
 /*=============== CONTACT ===============*/
-
 .contact__container{
   row-gap: 3rem;
   padding: 3rem;
@@ -592,13 +615,11 @@ img {
   margin-bottom: 1.5rem;
 }
 
-
 .contact__info{
   display: grid;
   gap: .5rem;
   margin: auto;
   width: 50%;
-  
 }
 
 .contact__card{
@@ -613,15 +634,12 @@ img {
   font-size: 2rem;
   color: var(--title-color);
   margin-bottom: .25rem;
-  
 }
-
 
 .contact__card-title,
 .contact__card-data{
   font-size: var(--small-font-size);
 }
-
 
 .contact__card-title{
   font-weight: var(--font-medium);
@@ -671,7 +689,6 @@ img {
   z-index: 1;
 }
 
-
 .contact__form-tag{
   position: absolute;
   top: -.75rem;
@@ -684,9 +701,7 @@ img {
 
 .contact__form-area{
   height: 11rem;
-
 }
-
 
 .contact__form-area textarea{
   resize: none;
@@ -704,7 +719,6 @@ img {
 .footer__link{
   color: var(--body-color);
 }
-
 
 .footer__title{
   text-align: center;
@@ -741,21 +755,20 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
-  background-color: hsl(var(--second-hue), 8%, 38%)
+  background-color: hsl(220, 8%, 38%);
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: hsl(var(--second-hue), 8%, 26%);
+  background-color: hsl(220, 8%, 26%);
   border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background-color: hsl(var(--second-hue), 8%, 20%);
+  background-color: hsl(220, 8%, 20%);
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -793,7 +806,6 @@ img {
     grid-template-columns: 145px;
     justify-content: center;
   }
-
 }
 
 /* For medium devices */
@@ -864,11 +876,7 @@ img {
   .section{
     padding: 6.5rem 0 1rem;
   }
-
-  .section__title{
-    margin-bottom: 3.5rem;
-  }
-
+ 
 
   .nav{
     height: calc(var(--header-height));
@@ -924,12 +932,10 @@ img {
     margin-bottom: 2.5rem;
   }
 
-  .skills__container
-  {
+  .skills__container{
     grid-template-columns: repeat(2 , 350px);
     column-gap: 3rem;
   }
-
 
   .services__container{
     grid-template-columns: repeat( 3 , 192px);
