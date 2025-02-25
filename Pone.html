@@ -1,118 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plagiarism Detector - Sahil Thakur</title>
-    <!-- Include the same CSS and fonts as your main page -->
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon" />
+
+    <style>
+      /* Centering content */
+      
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #3a65c7; /* Fixed missing semicolon */
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: hsl(240deg 94.3% 18.8%); /* Fixed missing semicolon */
+        color: white; /* Ensures the text color is visible */
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .container {
+        max-width: 800px; /* Limits width */
+        width: 100%;
+        text-align: center;
+        background: white;
+        color: hsl(240deg 94.3% 18.8%);
+
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: hsl(240deg 94.3% 18.8%);
+      }
+
+      ul {
+        text-align: left;
+        display: inline-block;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #000000;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <main class="main">
-        <section class="project-detail section">
-            <div class="container">
-                <h1 class="section__title">Plagiarism Detector using AWS</h1>
-                <p class="project-description">
-                    The Streamlit app is designed to detect plagiarism and find similarities between texts integrated with AWS S3 and EC2. It allows users to enter text or upload files (docx, pdf, txt). It splits the text into sentences, searches Google for each sentence, and compares the input text with retrieved results using cosine similarity. Users can also compare the similarity between two uploaded files. The results are displayed in a formatted DataFrame.
-                </p>
+      <section class="project-detail section">
+        <div class="container">
+          <h1 class="section__title">Plagiarism Detector using AWS</h1>
+          <article>
+            <h2>Plagiarism Detection Tool with Streamlit and AWS S3</h2>
+            <br />
+            <p>
+              In today’s digital age, ensuring content originality is essential.
+              Whether you’re a student, researcher, or content creator,
+              plagiarism detection tools play a vital role in upholding
+              integrity. This article explores the development of a Plagiarism
+              Detector built with Streamlit, Natural Language Processing (NLP)
+              techniques, and AWS S3 for secure file storage.
+            </p>
 
-                <article>
-                    <h2>Building a Plagiarism Detection Tool with Streamlit and AWS S3</h2>
-                    <p>In the age of digital content, ensuring originality is crucial. Whether you're a student, researcher, or content creator, plagiarism detection tools can help maintain integrity. In this article, we will walk through the development of a Plagiarism Detector using Streamlit, Natural Language Processing (NLP) techniques, and AWS S3 for file storage.</p>
+            <br>
 
-                    <h3>Key Features</h3>
-                    <p>Our plagiarism detection tool offers:</p>
-                    <ul>
-                        <li><strong>Text Input or File Upload:</strong> Users can manually enter text or upload a .docx, .pdf, or .txt file.</li>
-                        <li><strong>Sentence Tokenization:</strong> Text is broken into sentences for comparison.</li>
-                        <li><strong>Web Search for Similar Content:</strong> The tool fetches URLs from Google search results.</li>
-                        <li><strong>Cosine Similarity Analysis:</strong> Detects similarity between uploaded content and online sources.</li>
-                        <li><strong>AWS S3 Integration:</strong> Securely uploads and downloads files from an S3 bucket.</li>
-                    </ul>
+            <div>
+              <img src="Images/plag.png" alt="Plagiarism Detector Interface" />           
+               <br>
 
-                    <h3>Original Key Features</h3>
-                    <ul>
-                        <li><strong>User Input Options:</strong>
-                            <ul>
-                                <li>Enter text directly into a text area.</li>
-                                <li>Upload a single file in .docx, .pdf, or .txt format.</li>
-                                <li>Upload two files for similarity checks.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Text Processing:</strong> The application can read text from different file formats (.txt, .pdf, and .docx).</li>
-                        <li><strong>Plagiarism Detection:</strong> For entered text or uploaded files, the application searches Google for each sentence. It retrieves the first URL from the search results and checks the similarity of the text at that URL with the input text.</li>
-                        <li><strong>Similarity Check between multiple files:</strong> When users upload files, the application calculates the similarity between the texts of the files. It uses cosine similarity to measure how similar the texts are.</li>
-                    </ul>
-                    <p><strong>Original Author:</strong> <a href="https://www.github.com/Karthik-02">https://www.github.com/Karthik-02</a></p>
-
-                    <h3>Changes made by Our Team</h3>
-                    <ul>
-                        <li>Added a feature to only show the "Check for plagiarism" button if the minimum criteria of 40 words is met in the text area.</li>
-                        <li>Modified the code to only show the "Check for plagiarism or find similarities" button if text is entered or files are uploaded.</li>
-                        <li>Added logic to ensure only two files can be uploaded for the "Find similarities between files" option.</li>
-                        <li>Added a warning to ensure exactly two files are uploaded when checking for similarities.</li>
-                        <li>Added custom CSS to make all text in the Streamlit app cursive.</li>
-                        <li>Removed line, scatter, bar, pie, box, histogram, 3D scatter, and violin plots to simplify the output.</li>
-                        <li>Integrated with the AWS S3 bucket.</li>
-                    </ul>
-                    <p><strong>Our Repository:</strong> <a href="https://github.com/realsahilthakur/plagiarism_detector.git">https://github.com/realsahilthakur/plagiarism_detector.git</a></p>
-
-                    <h3>Required Libraries</h3>
-                    <p><code>pip install streamlit pandas nltk beautifulsoup4 requests scikit-learn docx2txt PyPDF2 boto3</code></p>
-                    <p>Before diving into the code, ensure you have the necessary dependencies installed:</p>
-                    <ul>
-                        <li><strong>AWS S3 setup:</strong> Configuration for uploading and downloading files from an S3 bucket.</li>
-                    </ul>
-                    <p>To integrate AWS S3 for secure file storage, first set up an S3 bucket on AWS and create IAM user credentials.</p>
-
-                    <h3>Steps to Set Up AWS S3</h3>
-                    <h4>Create an S3 Bucket:</h4>
-                    <ol>
-                        <li>Go to the AWS Management Console.</li>
-                        <li>Navigate to S3 and click <em>Create bucket</em>.</li>
-                        <li>Choose a unique bucket name and select the region.</li>
-                        <li>Adjust bucket settings as needed and create the bucket.</li>
-                    </ol>
-                    <h4>Set Up IAM User Credentials:</h4>
-                    <ol>
-                        <li>Navigate to AWS IAM (Identity and Access Management).</li>
-                        <li>Create a new user with programmatic access.</li>
-                        <li>Attach the policy <code>AmazonS3FullAccess</code> (or create a custom policy for restricted access).</li>
-                        <li>Save the Access Key ID and Secret Access Key securely (we will use these keys in the code).</li>
-                    </ol>
-
-                    <h3>Additional Notes</h3>
-                    <ul>
-                        <li><strong>Security:</strong> Ensure your AWS credentials and S3 permissions are set correctly to avoid access issues.</li>
-                        <li><strong>Dependencies:</strong> Make sure all required libraries are installed and configured properly on your EC2 instance.</li>
-                    </ul>
-
-                    <h3>Run Locally</h3>
-                    <ol>
-                        <li>Clone the project: <code>git clone https://github.com/realsahilthakur/plag.git</code></li>
-          
-
-                    <h3>Conclusion</h3>
-                    <p>This Streamlit-based Plagiarism Detector allows users to check for text similarities by comparing uploaded content with online sources. The integration of AWS S3 ensures secure file storage and retrieval. Future enhancements could include advanced NLP techniques like TF-IDF vectorization and deep learning-based similarity detection.</p>
-                    <p>🚀 Try building this tool and enhance it with new features!</p>
-                </article>
-
-                <a href="index.html" class="button">Back to Home</a>
+              <p><em>A snapshot of the Plagiarism Detector interface.</em></p>
             </div>
-        </section>
+            <br>
+
+            <h3>Key Features</h3>
+            <ul>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Flexible Input Options:</strong> Users can enter text
+                manually or upload a .docx, .pdf, or .txt file.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Sentence Tokenization:</strong> The tool splits text
+                into sentences for detailed comparison.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Web Search for Similar Content:</strong> Retrieves URLs
+                from Google search results.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Cosine Similarity Analysis:</strong> Measures similarity
+                between uploaded content and online sources.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>AWS S3 Integration:</strong> Securely stores files in an
+                AWS S3 bucket.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Clickable URL Results:</strong> Plagiarism check results
+                include clickable URLs.
+              </li>            <br>
+
+            </ul>
+            <br>
+
+            
+
+          </article>
+
+          <a href="index.html" class="button">Back to Home</a>
+        </div>
+      </section>
     </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-        
-    </footer>
-
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="/JS/scrollreveal.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="JS/main.js"></script>
-</body>
+  </body>
 </html>

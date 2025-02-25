@@ -1,50 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waste Classifier - Sahil Thakur</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon" />
+
+    <style>
+      /* Centering content */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #3a65c7;
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: hsl(240deg 94.3% 18.8%);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .container {
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+        background: white;
+        color: hsl(240deg 94.3% 18.8%);
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: hsl(240deg 94.3% 18.8%);
+      }
+
+      ul {
+        text-align: left;
+        display: inline-block;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <main class="main">
-        <section class="project-detail section">
-            <div class="container">
-                <h1 class="section__title">Waste Classifier</h1>
-                <p class="project-description">
-                    A system designed to automate and optimize the process of waste sorting. It uses various technologies such as artificial intelligence, machine learning, and computer vision. It can identify and categorize different types of waste, including recyclable materials, organic waste, hazardous waste, and non-recyclable waste.
-                </p>
-                <a href="index.html" class="button">Back to Home</a>
+      <section class="project-detail section">
+        <div class="container">
+          <h1 class="section__title">Smart Waste Classification System</h1>
+          <article>
+            <h2>Waste Classifier Using CVzone</h2>
+            <br />
+            <p>
+              This is a waste classifier program where users can show waste to the camera, and with the help of CVzone, it will automatically
+               detect the type of waste, which can be one of the following four: Recycle waste, Hazardous waste, Food waste, or Residual waste.
+               <br>
+            </br>
+               
+               Additionally, if a user is in front of the camera, it displays a message on the screen saying "Human Detected!". 
+               <br>
+            </br>
+            <i class='bx bx-right-arrow-alt services__icon'></i>The Smart Waste Classification System represents a significant step towards automating and enhancing waste management 
+               processes using computer vision and AI. 
+               <br>
+            </br>
+               <i class='bx bx-right-arrow-alt services__icon'></i>By providing real-time feedback and guidance, it can play a crucial role in
+                improving recycling practices and contributing to environmental sustainability. While the system has some limitations,
+                 future enhancements and integrations offer promising opportunities for broader application and impact.
+                 
+            </p>
+
+            <br>
+
+            <div>
+              <img src="Images/waste.png" alt="Waste Classifier Diagram" />           
+              <br>
+              <p><em>A diagram of the Waste Classifier system.</em></p>
             </div>
-        </section>
-    </main>
+            <br>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-        <div class="footer__container container">
-            <h1 class="footer__title">OKA BYE BYE...</h1>
-
-            <ul class="footer__social">
-                <a href="https://github.com/realsahilthakur" target="_blank" class="footer__social-link">
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/realsahilthakur/" target="_blank" class="footer__social-link">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
+            <h3>Key Features</h3>
+            <ul>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Real-Time Waste Detection:</strong> Uses CVzone to identify waste types (Recycle, Hazardous, Food) via camera input.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Human Detection:</strong> Displays "Human Detected!" message when a person is in front of the camera.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Automated Classification:</strong> Leverages computer vision and AI for instant waste type recognition.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Environmental Impact:</strong> Encourages recycling and proper waste disposal through real-time feedback.
+              </li>
+              <br>
             </ul>
-            <span class="footer__copy">
-                BE HAPPY
-            </span>
+            <br>
+
+          <a href="index.html" class="button">Back to Home</a>
         </div>
-    </footer>
-
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="/JS/scrollreveal.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="JS/main.js"></script>
-</body>
+      </section>
+    </main>
+  </body>
 </html>

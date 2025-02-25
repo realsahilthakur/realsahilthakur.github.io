@@ -317,7 +317,7 @@ img {
 .home__social-link{
   width: max-content;
   background-color: var(--container-color);
-  color: var(--first-color);
+  color: hsl(240deg 94.3% 18.8%);
   padding: .25rem;
   border-radius: .25rem;
   display: flex;

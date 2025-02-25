@@ -1,50 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Management - Sahil Thakur</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagiarism Detector - Sahil Thakur</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Images/ok.png" type="image/x-icon" />
+
+    <style>
+      /* Centering content */
+      
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #3a65c7; /* Fixed missing semicolon */
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: hsl(240deg 94.3% 18.8%); /* Fixed missing semicolon */
+        color: white; /* Ensures the text color is visible */
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .container {
+        max-width: 800px; /* Limits width */
+        width: 100%;
+        text-align: center;
+        background: white;
+        color: hsl(240deg 94.3% 18.8%);
+
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: hsl(240deg 94.3% 18.8%);
+      }
+
+      ul {
+        text-align: left;
+        display: inline-block;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #000000;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <main class="main">
-        <section class="project-detail section">
-            <div class="container">
-                <h1 class="section__title">Attendance Management</h1>
-                <p class="project-description">
-                    Built an Attendance Management System using a Fingerprint Sensor and Arduino with Arduino IDE. This project was created using knowledge of Arduino, Fingerprint, and Arduino IDE. Users can store their fingerprint, and every time they rescan it, the time and date will be saved. It can save 200+ fingerprints. It automatically removes stored time and date after 15 days from the system. Whole data will be saved in the Arduino memory itself.
-                </p>
-                <a href="index.html" class="button">Back to Home</a>
+      <section class="project-detail section">
+        <div class="container">
+          <h1 class="section__title">Plagiarism Detector using AWS</h1>
+          <article>
+            <h2>Plagiarism Detection Tool with Streamlit and AWS S3</h2>
+            <br />
+            <p>
+              In today’s digital age, ensuring content originality is essential.
+              Whether you’re a student, researcher, or content creator,
+              plagiarism detection tools play a vital role in upholding
+              integrity. This article explores the development of a Plagiarism
+              Detector built with Streamlit, Natural Language Processing (NLP)
+              techniques, and AWS S3 for secure file storage.
+            </p>
+
+            <br>
+
+            <div>
+              <img src="Images/plag.png" alt="Plagiarism Detector Interface" />           
+               <br>
+
+              <p><em>A snapshot of the Plagiarism Detector interface.</em></p>
             </div>
-        </section>
-    </main>
+            <br>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-        <div class="footer__container container">
-            <h1 class="footer__title">OKA BYE BYE...</h1>
+            <h3>Key Features</h3>
+            <ul>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Flexible Input Options:</strong> Users can enter text
+                manually or upload a .docx, .pdf, or .txt file.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Sentence Tokenization:</strong> The tool splits text
+                into sentences for detailed comparison.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Web Search for Similar Content:</strong> Retrieves URLs
+                from Google search results.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Cosine Similarity Analysis:</strong> Measures similarity
+                between uploaded content and online sources.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>AWS S3 Integration:</strong> Securely stores files in an
+                AWS S3 bucket.
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt services__icon'></i><strong>Clickable URL Results:</strong> Plagiarism check results
+                include clickable URLs.
+              </li>            <br>
 
-            <ul class="footer__social">
-                <a href="https://github.com/realsahilthakur" target="_blank" class="footer__social-link">
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/realsahilthakur/" target="_blank" class="footer__social-link">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
             </ul>
-            <span class="footer__copy">
-                BE HAPPY
-            </span>
+            <br>
+
+            
+
+          </article>
+
+          <a href="index.html" class="button">Back to Home</a>
         </div>
-    </footer>
-
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="/JS/scrollreveal.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="JS/main.js"></script>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
