@@ -432,7 +432,7 @@ img {
     align-items: center;
     flex-direction: column;
     row-gap: 2rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .skills__content {
@@ -495,9 +495,9 @@ img {
 
 /*=============== SERVICES ===============*/
 .services__container {
-    grid-template-columns: repeat(3, 1fr); /* Changes to three columns to match the image */
-    gap: 2rem; /* Increases gap for consistent spacing between cards */
-    padding-top: 2rem; /* Adds more padding at the top for balance */
+    /* grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+    padding-top: 2rem; */
     justify-content: center; /* Centers the grid horizontally */
 }
 
@@ -510,7 +510,7 @@ img {
     justify-content: space-between; /* Distributes space evenly, pushing button to bottom */
     align-items: center; /* Centers content horizontally */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for elevation */
-    height: 200px; /* Fixed height for uniform card size, adjust as needed */
+    height: 200px; 
     transition: .4s; /* Matches your theme transition for hover effects */
 }
 
